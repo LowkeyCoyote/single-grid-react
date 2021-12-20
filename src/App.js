@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from "react";
+import { useMediaQuery } from 'react-responsive';
+import Desktop from './components/Card/desktop/desktop.card';
+import Mobile from "./components/Card/mobile/mobile.card";
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const isMobileDevice = useMediaQuery({
+        query: "(max-device-width: 480px)",
+    });
+
+    const isDesktop = useMediaQuery({
+        query: "(min-device-width: 481px)",
+    });
+
+        return (
+            <>
+                <main>
+                    {isDesktop && <Desktop /> }
+                    {isMobileDevice && <Mobile />}
+                </main>
+            </>
+        )
 }
 
-export default App;
+export default App

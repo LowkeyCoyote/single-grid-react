@@ -1,0 +1,94 @@
+.mobile{
+    background-color: white;
+    height: 730px;
+    width: 315px;
+    border-radius: 5px;
+    box-shadow: 0 15px 35px hsla(218, 22%, 67%, 0.35);
+    display: grid;
+    grid-template-columns: 315px;
+    grid-template-rows: 266px 232px 232px;
+    overflow: hidden;
+}
+
+.mobile .first-section{
+    padding: 25px;
+}
+
+.mobile .first-section h2{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.mobile .first-section h3{
+    font-size: 16px;
+    color: var(--bright-yellow);
+    margin-bottom: 20px;
+}
+
+.mobile .first-section p{
+    font-size: 14px;
+    color: var(--grayish-blue);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+.mobile .second-section{
+    background-color: var(--cyan);
+    color: white;
+    padding: 25px;
+}
+
+.mobile .second-section h3{
+    margin-bottom: 20px;
+}
+
+.mobile .price-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mobile .price{
+    font-size: 30px;
+    margin-right: 12px;
+}
+
+.mobile .month{
+    color: white;
+    opacity: 0.5;
+}
+
+.mobile .second-section p{
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.mobile .btn{
+    width: 95%;
+    padding: 15px 0;
+    text-align: center;
+    background-color: var(--bright-yellow);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 15px 35px hsla(218, 22%, 67%, 0.35);
+    cursor: pointer;
+}
+
+.mobile .third-section{
+    background-color: hsla(179, 62%, 43%, 0.8);
+    color: white;
+    padding: 25px;
+}
+
+.mobile  .list{
+    font-size: 14px;
+    list-style: none;
+    color: white;
+    opacity: 0.7;
+    line-height: 1.5;
+    margin-top: 15px;
+}
