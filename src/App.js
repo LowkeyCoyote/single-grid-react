@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import { useMediaQuery } from 'react-responsive';
 import Desktop from './components/Card/desktop/desktop.card';
 import Mobile from "./components/Card/mobile/mobile.card";
